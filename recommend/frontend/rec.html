@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rec.css" />
+    <title>C.A.S.T</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>C.A.S.T</h1>
+    </div>
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-button active" id="jobTab">모집공고</button>
+        <button class="tab-button" id="postTab">포트폴리오확인</button>
+      </div>
+
+      <!-- 모집공고 콘텐츠 -->
+      <div id="jobContent" class="tab-content">
+        <h2>모집공고</h2>
+        <form id="jobForm" class="form-container">
+          <div class="form-section">
+            <label for="jobTitle">Title:</label>
+            <input type="text" id="jobTitle" placeholder="Enter job title" />
+          </div>
+          <div class="form-section">
+            <h3>Tags</h3>
+            <div id="jobTags" class="checkbox-container">
+              <!-- Tags will be dynamically populated by JavaScript -->
+            </div>
+          </div>
+          <div class="form-section">
+            <button type="button" id="jobSubmitButton">Submit</button>
+          </div>
+        </form>
+        <!-- 모집공고 결과 표시 -->
+        <div id="jobResults" class="results-container"></div>
+      </div>
+
+      <!-- 포트폴리오 콘텐츠 -->
+      <div id="postContent" class="tab-content hidden">
+        <h2>포트폴리오확인</h2>
+        <form id="postForm" class="form-container">
+          <div class="form-section">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" placeholder="Enter post title" />
+          </div>
+          <div class="form-section">
+            <h3>Tags</h3>
+            <div id="postTags" class="checkbox-container"></div>
+          </div>
+          <div class="form-section">
+            <button type="button" id="postSubmitButton">Submit</button>
+          </div>
+        </form>
+        <!-- 포트폴리오 결과 표시 -->
+        <div id="postResults" class="results-container"></div>
+      </div>
+    </div>
+
+    <script src="rec.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chating.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- 대화창 -->
+      <div id="chat-window" class="chat-window">
+        <div id="chat-messages" class="chat-messages"></div>
+      </div>
+
+      <!-- 입력 영역 -->
+      <div class="chat-input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+
+      <!-- PDF 업로드 -->
+      <div class="pdf-upload-area">
+        <label for="pdfFiles"
+          >📂 Select PDFs <span id="file-count">(0)</span></label
+        >
+        <input type="file" id="pdfFiles" multiple accept=".pdf" />
+        <button id="upload-btn" type="button">Upload</button>
+      </div>
+    </div>
+    <script src="chating.js"></script>
+  </body>
+</html>
